@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date & Music</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      font-size: 3em;
+    }
+  </style>
+</head>
+<body>
+  <div id="date"></div>
+  <audio autoplay loop>
+    <source src="mysong.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Display today’s date
+    const dateElement = document.getElementById('date');
+    const date = new Date();
+    dateElement.textContent = date.toDateString();
+  </script>
+</body>
+</html>
