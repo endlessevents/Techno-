@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Date & Music</title>
+  <title>Date</title>
   <style>
     body {
       margin: 0;
@@ -26,49 +26,10 @@
     .date {
       font-size: 6em;
     }
-
-    .video-container {
-      display: none;
-      margin-top: 20px;
-    }
-
-    .play-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1.2em;
-      background-color: white;
-      color: black;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
   <div class="save-the-date">Save the Date</div>
   <div class="date">15th August 2025</div>
-
-  <button class="play-button" onclick="playVideo()">Play Music</button>
-
-  <div class="video-container" id="videoContainer">
-    <iframe 
-      id="yt-player"
-      width="300" 
-      height="200" 
-      src=""
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <script>
-    function playVideo() {
-      const container = document.getElementById('videoContainer');
-      const player = document.getElementById('yt-player');
-      container.style.display = 'block';
-      player.src = "https://www.youtube.com/embed/VF9_dCo6JT4?autoplay=1";
-    }
-  </script>
 </body>
 </html>
